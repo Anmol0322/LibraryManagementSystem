@@ -100,6 +100,6 @@ class book_i:
         mycursor.execute(f"select * from book where std_id={self.std_id}")
         record = mycursor.fetchone()
         print("\nYou have a book.")
-        print("Book Name:", record[1])
+        print("\nBook Name:", record[1])
         print("Author:", record[2])
         print("ISBN:", record[3])
