@@ -99,7 +99,6 @@ class book_i:
     def sel_book(self):
         mycursor.execute(f"select * from book where std_id={self.std_id}")
         record = mycursor.fetchone()
-        print("\nYou have a book.")
         print("\nBook Name:", record[1])
         print("Author:", record[2])
         print("ISBN:", record[3])
