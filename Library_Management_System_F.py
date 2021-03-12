@@ -102,8 +102,8 @@ if __name__=="__main__":
             ph = int(input("Enter your phone number: "))
             try:
                 s=book_i(id,ph)
-                print("\n!!!You will take 1 book at a time!!!")
                 while(True):
+                    print("\n!!!You will take 1 book at a time!!!")
                     print("\na. Book Issue\n"
                           "b. Return Book\n"
                           "c. Check your Book status")
@@ -123,7 +123,7 @@ if __name__=="__main__":
                             print("\nBook Returned. Successfully!!!")
                         elif ch=='c':
                             try:
-                                s.sel_book(id)
+                                s.sel_book()
                             except:
                                 print("\nYou don't have a book yet. Issue book first!")
                         else:
